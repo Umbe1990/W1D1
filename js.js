@@ -28,3 +28,18 @@ function button3(){
 }
 const terzoAlert=document.querySelector(".blog-post:nth-of-type(3) .blog-post-meta a");
 terzoAlert.addEventListener('mouseover',button3);
+
+
+
+    
+function elimina(){
+    let elementi=document.querySelectorAll(".stretched-link")
+    for(let elemento of elementi){
+       console.log(elemento)
+    elemento.addEventListener("click",function(){
+        let padreDaRimuovere=elemento.parentNode
+        padreDaRimuovere.remove()
+    } )
+    }
+}
+ elimina()
